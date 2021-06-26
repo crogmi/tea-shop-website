@@ -1,0 +1,20 @@
+/* General styling:
+font-family: Helvetica;
+font-size: 22px;
+color: seashell;
+background-color: black;
+opacity: 0.9 (optional styling)
+
+text is centered horizontally */
+html {
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
