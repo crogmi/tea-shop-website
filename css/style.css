@@ -1,20 +1,165 @@
-/* General styling:
-font-family: Helvetica;
-font-size: 22px;
-color: seashell;
-background-color: black;
-opacity: 0.9 (optional styling)
-
-text is centered horizontally */
+/* General styling */
 html {
     box-sizing: border-box;
     background-color: black;
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
+    text-align: center;
 }
 
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+h4 {
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+/* header and nav */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: inline-flex;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 10;
+}
+
+header img {
+    max-height: 50px;
+    width: auto;
+    margin-left: 10px;
+    float: left;
+}
+
+header nav ul, a {
+    list-style-type: none;
+    color: seashell;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.nav-box {
+    display: inline-flex;
+    padding: 0 0.5rem;
+}
+
+/* Mission */
+
+#mission {
+    display: flex;
+    background-image: url("/img/img-mission-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    padding-top: 69px;
+}
+
+.mission-container {
+    background-color: black;
+    width: 100%;
+    padding: 0;
+}
+
+/* Featured Teas */
+#featured-tea {
+    padding-top: 69px;
+    margin: auto;
+    max-width: 1000px;
+    margin-bottom: 69px;
+}
+
+.product-image {
+    max-width: 300px;
+    height: auto;
+}
+
+.tea-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tea-box {
+    display: block;
+    margin: 0 1%;
+}
+
+/* Locations */
+#locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/img-locations-background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+}
+
+#locations-section {
+    display: inline-block;
+}
+
+#locations h2 {
+    margin: 0;
+}
+
+.locations-container {
+    display: inline-flex;
+    justify-content: space around;
+    align-items: center;
+    flex-basis: wrap;
+}
+
+.locations-box {
+    display: inline-block;
+    width: 300px;
+    margin: 15px 20px;
+    background-color: black;
+}
+
+.locations-name {
+    text-decoration: underline;
+}
+
+.address {
+    padding: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    font-size: 0.75rem;
 }
